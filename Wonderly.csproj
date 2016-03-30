@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="css\shCore.css" />
     <Content Include="css\shThemeDefault.css" />
+    <Content Include="images\camping.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\shBrushJScript.js" />
     <Content Include="js\shCore.js" />
@@ -123,7 +124,6 @@
   <ItemGroup>
     <Folder Include="assets\" />
     <Folder Include="fonts\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
