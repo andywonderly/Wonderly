@@ -14,14 +14,14 @@
     <!-- CSS
   ================================================== -->
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Animation -->
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Prettyphoto -->
-    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <!-- Prettyphoto 
+    <link rel="stylesheet" href="css/prettyPhoto.css"> -->
     <!-- Template styles-->
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive styles-->
@@ -41,7 +41,24 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-      
+  <!--     <script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+      </script> -->
+
+
   </head>
    <body data-spy="scroll" data-target=".main-nav">
 
@@ -80,14 +97,14 @@
            <!--  <section id="section-profile"> -->
            <br />
            <br />
-           <div style="width: 604px; margin: 0 auto; text-align: center;">
-               <div style="width:604px;">
-                   <div style="background-image: url(images/camping.png); width: 604px; height: 453px; display: table-cell; vertical-align: bottom; text-align: center; font-family: sans-serif; font-size: 24px; padding: 10px; color: black; font-weight: bold;">
+           <div style="width: 600px; margin: 0 auto; text-align: center;">
+               <div style="width:600px;">
+                   <div style="background-image: url(images/night-839807_600_425.jpg); width: 600px; height: 425px; display: table-cell; vertical-align: bottom; text-align: center; font-family: 'Roboto', sans-serif; font-size: 24px; padding: 10px; color: #eaeef1; font-weight: bold;">
                        ANDY WONDERLY<br />
                    </div>
-                   <div style="background-color:#eaeef1; vertical-align: bottom; text-align: left; font-family: Roboto; font-size: 20px; padding: 10px;">
+                   <div style="background-color:#eaeef1; vertical-align: bottom; text-align: left; font-family: 'Roboto'; font-size: 20px; padding: 10px;">
                        <div style="margin-left: 25px; margin-right: 25px; font-size: 18px;">I'm a software developer who uses logic and my scientific background to build efficient solutions.  I have a Masters degree in geology,
-                       and spent four years in the energy industry before making a career change to programming.</div>
+                       and spent four years in the oil and gas industry before making a career change to programming.</div>
                    </div>
 
                </div>
@@ -95,42 +112,62 @@
        </section>
 
        <div style="height: 130px;"></div>
-
-       <section id="section-portfolio" class="section-padding">
-           
-
-           <br />
-           <br />
-           <br />
-           
-           
+       <br /><br /><br />
+       <section id="section-portfolio" class="section-padding"> <!-- Begin portfolio section -->
+           <br /><br /><br />   
 
            <div class="container">
-
-
-               <div class="clearfix"></div>
-
-
-
-               <div class="resume-desc">
-                   <h2>Portfolio - Upcoming Coder Foundry projects</h2>
-                   <br />
-                   
-                   <div>
-                       <a href="#"><h4>Bug Tracker</h4></a>
+               <div class="row">
+                   <div class="col-md-12 text-center wow fadeInUp" style="height: 94px;">
+                       <div class="section-heading">
+                           <h2 class="heading-title" style="color: #252e30;">portfolio</h2>
+                       </div>  
                    </div>
+                </div>
+               
 
-                   <div>
-                       <a href="#"><h4>Car Lister</h4></a>
-                   </div>
-
-                  
-
+               <div class="row">
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           <img src="images/portfolio/bugtracker.jpg" alt="" class="img-responsive">
+                           <div class="image-overlay text-center">
+                               <a href="images/portfolio/port4.jpg" data-rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                           </div>
+                           Bug Tracker
+                       </div>
+                   </div> <!-- col-md-4 end -->
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           <img src="images/portfolio/carlister.jpg" alt="" class="img-responsive">
+                           <div class="image-overlay text-center">
+                               <a href="images/portfolio/port2.jpg" data-rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                           </div>
+                           Car Lister
+                       </div>
+                   </div> <!-- col-md-4 end -->
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           <img src="images/portfolio/port3.jpg" alt="" class="img-responsive">
+                           <div class="image-overlay text-center">
+                               <a href="images/portfolio/port3.jpg" data-rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                           </div>
+                           Project #3
+                       </div>
+                   </div> <!-- col-md-4 end 3step-->
+                   <div class="clearfix"></div>
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           <img src="images/portfolio/port1.jpg" alt="" class="img-responsive">
+                           <div class="image-overlay text-center">
+                               <a href="images/portfolio/port1.jpg" data-rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                           </div>
+                           Project #4
+                       </div>
 
 
                </div>
-
-           </div><!-- row end -->
+           </div>
+          </div>
        </section>
 
 
@@ -142,79 +179,76 @@
            <div class="modal fade" id="numberComparison" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-lg">
                    <div class="modal-content">
+                       
                        <br />
                        <br />
                        <br />
 
                        <div class="modal-header">
                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">Number Comparison exercise</h2>
+                           <h2 class="modal-title" id="myModalLabel" style="text-align: center;">Number Comparison exercise</h2>
                        </div>
-                       <div class="modal-body col-sm-12">
-                           <script src="js/bootstrap.js"></script>
+
+                       <div style="background-color: white;">
+                           <!-- exercise modal -->
+                           <div class="modal-body col-lg-12" style="background-color: white;">
+                               <div class="col-lg-4" style="background-color: white;">
+                                   <script src="js/bootstrap.js"></script>
 
 
-                           <form>
-                               This script takes a list of numbers and finds their minimum, maximum, average, sum, and product.<br /><br />Please input numbers separated by spaces and click ENTER: <input type="text" name="numbersToCompare" value="1 2 3 4">
-                           </form>
-                           <input type="button" onclick="fiveNumbers()" value="ENTER" id="button1" /> <br />
-                           Least number:  <div id="leastNum"></div><br />
-                           Greatest number: <div id="greatestNum"></div><br />
-                           Average of numbers: <div id="avg"></div><br />
-                           Sum: <div id="sum"></div><br />
-                           Product: <div id="product"></div><br />
+                                   <form> <br />
+                                       This script takes a list of numbers and finds their minimum, maximum, average, sum, and product.<br /><br />Please input numbers separated by spaces and click ENTER: <input type="text" name="numbersToCompare" value="1 2 3 4">
+                                   </form>
+                                   <input type="button" onclick="fiveNumbers()" value="ENTER" id="button1" /> <br />
+                                   Least number:  <div id="leastNum"></div><br />
+                                   Greatest number: <div id="greatestNum"></div><br />
+                                   Average of numbers: <div id="avg"></div><br />
+                                   Sum: <div id="sum"></div><br />
+                                   Product: <div id="product"></div><br />
+                               </div>
 
-                       </div>
-                       <div class="modal-footer no-margin">
-                       </div>
-                   </div>
-               </div>
-           </div><!-- end Number Comparison modal -->
+                               <!-- <div class="modal-footer no-margin">
+            </div> -->
+                               <!-- end exercise section -->
 
-           <!-- begin Number Comparison Code modal -->
-           <div class="modal fade" id="numberComparisonCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-               <div class="modal-dialog modal-lg">
-                   <div class="modal-content">
-                       <br />
-                       <br />
-                       <br />
+                               <div class="col-lg-8" style="background-color: white">
+                                   <!-- begin source code section -->
+                                   <section id="numberComparisonSource">
+                                    
+                                       <a href="#numberComparisonSource"><h3 style="margin-left: 10px;">Source code</h3></a>
 
-                       <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">Number Comparison code</h2>
-                       </div>
-                       <div class="modal-body col-sm-12">
-                           <pre class="brush: js text">
+                                       <pre class="brush: js text">
 //This is the number comparison function
 $('#button1').click(function(){
-
+        
 //Take input string from HTML form and store it in toAdd
 var toAdd = $("input[name=numbersToCompare]").val();
-
+    
 //Split characters in string between spaces
 var x = toAdd.split(" ");
-
+        
 //Declare array y to house contents of array x as integers
 var y = [];
 
 //Convert each element of array x to integer using parseInt()
+//and push it to array y
 for (var i = 0; i < x.length; i++) {
-y.push(parseInt(x[i]));
-};
+    y.push(parseInt(x[i]));
+    };
 
-//Print lowest number number
+//Print lowest number
 document.getElementById("leastNum").innerHTML = Math.min.apply(null, y);
-
+    
 //Print greatest number
 document.getElementById("greatestNum").innerHTML = Math.max.apply(null, y);
-
+    
 //Find sum and print.  Here, z is the sum, and each element of y is added to it
 var z = 0;
-
+    
 for (var i = 0; i < y.length ; i++ ) {
-z += y[i];
-}
-
+    z += y[i];
+    }
+    
 document.getElementById("sum").innerHTML = z;
 
 //Find average and print
@@ -223,127 +257,140 @@ document.getElementById("avg").innerHTML = z;
 
 //Find product and print.  Same for-loop as the sum, but with multiplication
 z = y[0];
-
+        
 for (var i = 1; i < y.length; i++ ) {
-z *= y[i];
-}
+    z *= y[i];
+    }
 
 document.getElementById("product").innerHTML = z;
-
 });
                             </pre>
-                       </div>
-                       <div class="modal-footer no-margin">
+                                   </section>
+
+                               </div>
+                           </div>
                        </div>
                    </div>
                </div>
-           </div><!-- end Number Comparison code modal -->
+           </div><!-- end Number Comparison modal -->
+
+ 
 
            <!-- begin Factorial modal -->
+
            <div class="modal fade" id="factorial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-lg">
                    <div class="modal-content">
+
                        <br />
                        <br />
                        <br />
 
                        <div class="modal-header">
                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">Factorial exercise</h2>
+                           <h2 class="modal-title" id="myModalLabel" style="text-align: center;">Factorial exercise</h2>
                        </div>
-                       <div class="modal-body col-sm-12">
 
-                           <form>
-                               This script finds the factorial of a number that you enter. <br /><br />Please enter a positive number for which you would like the factorial and click ENTER: <input type="number" name="factorial" value=5>
-                           </form>
-                           <input type="button" onclick="factorial()" value="ENTER" id="button2" /> <br />
-                           The factorial is <div id="factorialDiv"></div> <br />
+                       <div style="background-color: white;">
+                           <!-- exercise modal -->
+                           <div class="modal-body col-lg-12" style="background-color: white;">
+                               <div class="col-lg-4" style="background-color: white;">
+                                   <script src="js/bootstrap.js"></script>
+                                   
+                                   <form>
+                                       Please enter a positive number for which you would like the factorial and click ENTER: <input type="number" name="factorial" value=5>
+                                   </form>
+                                   <input type="button" onclick="factorial()" value="ENTER" id="button2" /> <br />
+                                   The factorial is <div id="factorialDiv"></div> <br />
+                               </div>
 
-                       </div>
-                       <div class="modal-footer no-margin">
-                       </div>
-                   </div>
-               </div>
-           </div><!-- end Factorial modal -->
+                               <!-- <div class="modal-footer no-margin">
+                        </div> -->
+                               <!-- end exercise section -->
 
-           <!-- begin Factorial Code modal -->
-           <div class="modal fade" id="factorialCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-               <div class="modal-dialog modal-lg">
-                   <div class="modal-content">
-                       <br />
-                       <br />
-                       <br />
+                               <div class="col-lg-8" style="background-color: white">
+                                   <!-- begin source code section -->
+                                   <section id="numberComparisonSource">
 
-                       <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">Factorial code</h2>
-                       </div>
-                       <div class="modal-body col-sm-12">
-                           <pre class="brush: js text">
+                                       <a href="#numberComparisonSource"><h3 style="margin-left: 10px;">Source code</h3></a>
+
+                                       <pre class="brush: js text">
 //This is the factorial function
 $('#button2').click(function(){
-
+       
 //Declare the input variable and the factorial result variable
 var toFact = $("input[name=factorial]").val();
 var fact = toFact;
-
-//Multiply fact times one less than fact, and keep multiplying by one less until the amount to multiply by is zero. 
-//I imagine that this only works for positive numbers.
+        
+//Multiply fact times one less than fact, and keep multiplying
+//by one less until the amount to multiply by is zero. 
+//I imagine this only works for positive numbers.
 for( var i = (toFact - 1) ; i > 0; i-- ) {
-fact = fact * i;
+    fact = fact * i;
 }
-
+        
 //Print the factorial
 document.getElementById("factorialDiv").innerHTML = fact;
-                        </pre>
-                       </div>
-                       <div class="modal-footer no-margin">
+        
+});
+    
+                            </pre>
+                                   </section>
+
+                               </div>
+                           </div>
                        </div>
                    </div>
                </div>
-           </div><!-- end Factorial code modal -->
+           </div>
+
+           <!-- end Factorial modal -->
+
+ 
 
            <!-- begin FizzBuzz modal -->
+
            <div class="modal fade" id="FizzBuzz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-lg">
                    <div class="modal-content">
+
                        <br />
                        <br />
                        <br />
 
                        <div class="modal-header">
                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">FizzBuzz exercise</h2>
+                           <h2 class="modal-title" id="myModalLabel" style="text-align: center;">FizzBuzz exercise</h2>
                        </div>
-                       <div class="modal-body col-sm-12">
 
-                           <form>
-                               FizzBuzz compares two numbers to numbers 1 to 100.  Each number of 1 to 100 that is a multiple of the first number prints "Fizz" and each number that is a multiple fo the second number prints "Buzz."  Numbers that are a multiple of both print "FizzBuzz."  Else, the number itself is printed.  <br /> <br />Please enter two integers between 1 and 100 and click ENTER: <input type="text" name="fizzBuzzField" value="11 22">
-                           </form>
-                           <input type="button" onclick="fizzBuzz()" value="ENTER" id="button3" /> <br />
-                           <div id="fizzBuzzDiv"></div>
+                       <div style="background-color: white;">
+                           <!-- exercise modal -->
+                           <div class="modal-body col-lg-12" style="background-color: white;">
+                               <div class="col-lg-4" style="background-color: white;">
+                                   <script src="js/bootstrap.js"></script>
 
-                       </div>
-                       <div class="modal-footer no-margin">
-                       </div>
-                   </div>
-               </div>
-           </div><!-- end FizzBuzz modal -->
+                                  
+                                   <form>
+                                       This script takes two numbers between 1 and 100 and compares them to each number between 1 and 100.  For each number between 1 and 100 that is a multiple
+                                       of the first number, the script prints "Fizz."  For each that is a multiple of the second number, it prints "Buzz."  If it is a multiple of both numbers,
+                                       it prints "FizzBuzz."  Else, the number itself is printed.
+                                       <br /><br />Please enter two integers between 1 and 100 and click ENTER: <input type="text" name="fizzBuzzField" value="6 11">
+                                   </form>
+                                   <input type="button" onclick="fizzBuzz()" value="ENTER" id="button3" /> <br />
+                                   <div id="fizzBuzzDiv"></div>
+                               </div>
 
-           <!-- begin FizzBuzz code modal -->
-           <div class="modal fade" id="FizzBuzzCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-               <div class="modal-dialog modal-lg">
-                   <div class="modal-content">
-                       <br />
-                       <br />
-                       <br />
+                               <!-- <div class="modal-footer no-margin">
+                        </div> -->
+                               <!-- end exercise section -->
 
-                       <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">FizzBuzz code</h2>
-                       </div>
-                       <div class="modal-body col-sm-12">
-                           <pre class="brush: js text">
+                               <div class="col-lg-8" style="background-color: white">
+                                   <!-- begin source code section -->
+                                   <section id="numberComparisonSource">
+
+                                       <a href="#numberComparisonSource"><h3 style="margin-left: 10px;">Source code</h3></a>
+
+                                       <pre class="brush: js text">
 //This is the FizzBuzz function
 $('#button3').click(function() {
 
@@ -361,7 +408,7 @@ var outputString = "";
 
 //Convert each element of fbStringArray to integers and push them to fbIntegerArray
 for (var i = 0; i < fbStringArray.length; i++) {
-fbIntegerArray.push( parseInt( fbStringArray[i] ) );
+    fbIntegerArray.push( parseInt( fbStringArray[i] ) );
 };
 
 //Run FizzBuzz from 1 to 100
@@ -374,15 +421,18 @@ for ( var i = 1; i <= 100; i++ ) {
 //First test for being a multiple of both numbers and set outputString to FizzBuzz if it passes
 if( ( i / fbIntegerArray[0] == Math.floor(i / fbIntegerArray[0]) ) && ( i / fbIntegerArray[1] == Math.floor( i / fbIntegerArray[1]) ) ) {
 outputString += "FizzBuzz";
+
 //If that test fails, test for being a multiple of only the first number and append Fizz to outputString if it passes
 } else if( i / fbIntegerArray[0] == Math.floor(i / fbIntegerArray[0]) ) {
 outputString += "Fizz";
+
 //Then test for being a multiple of only the second number and append Buzz to outputString if it passes
 } else if( i / fbIntegerArray[1] == Math.floor(i / fbIntegerArray[1]) ) {
 outputString += "Buzz";
+
 //If those three tests fail, append the number being tested to outputString
 } else {
-outputString += i.toString();
+    outputString += i.toString();
 }
 
 //Add a space to the end of outputString to separate each entry by a space
@@ -392,60 +442,68 @@ outputString += " ";
 
 //Print outputString
 document.getElementById("fizzBuzzDiv").innerHTML = outputString;
-                        </pre>
-                       </div>
-                       <div class="modal-footer no-margin">
+    
+                            </pre>
+                                   </section>
+
+                               </div>
+                           </div>
                        </div>
                    </div>
                </div>
-           </div><!-- end FizzBuzz code modal -->
+           </div>
+
+ <!-- end FizzBuzz modal -->
+
 
            <!-- begin Palindrome test modal -->
+
+
+
            <div class="modal fade" id="palindromeTest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-lg">
                    <div class="modal-content">
+
                        <br />
                        <br />
                        <br />
 
                        <div class="modal-header">
                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">Palindrome Test exercise</h2>
+                           <h2 class="modal-title" id="myModalLabel" style="text-align: center;">Palindrome Test exercise</h2>
                        </div>
-                       <div class="modal-body col-sm-12">
 
-                           <form>
-                               This script tests whether the string you enter is a palindrome.<br /><br />Please enter a string and click ENTER: <input type="text" name="palindromeInput" value="acrobats stab orca">
-                           </form>
-                           <input type="button" onclick"palindromTest()" value="ENTER" id="button4" /> <br />
-                           <div id="palindromeDiv"></div>
+                       <div style="background-color: white;">
+                           <!-- exercise modal -->
+                           <div class="modal-body col-lg-12" style="background-color: white;">
+                               <div class="col-lg-4" style="background-color: white;">
+                                   <script src="js/bootstrap.js"></script>
 
-                       </div>
-                       <div class="modal-footer no-margin">
-                       </div>
-                   </div>
-               </div>
-           </div><!-- end Palindrome test modal -->
 
-           <!-- begin Palindrome test code modal -->
-           <div class="modal fade" id="palindromeTestCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-               <div class="modal-dialog modal-lg">
-                   <div class="modal-content">
-                       <br />
-                       <br />
-                       <br />
+                                   <form>
+                                       This script tests whether the string you enter is a palindrome.<br /><br />Please enter a string and click ENTER: <input type="text" name="palindromeInput" value="acrobats stab orca">
+                                   </form>
+                                   <input type="button" onclick"palindromTest()" value="ENTER" id="button4" /> <br />
+                                   <div id="palindromeDiv"></div>
+                               </div>
 
-                       <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                           <h2 class="modal-title" id="myModalLabel">Palindrome Test code</h2>
-                       </div>
-                       <div class="modal-body col-sm-12">
-<pre class="brush: js text">
+                               <!-- <div class="modal-footer no-margin">
+                        </div> -->
+                               <!-- end exercise section -->
+
+                               <div class="col-lg-8" style="background-color: white">
+                                   <!-- begin source code section -->
+                                   <section id="numberComparisonSource">
+
+                                       <a href="#numberComparisonSource"><h3 style="margin-left: 10px;">Source code</h3></a>
+
+                                       <pre class="brush: js text">
 //This is the palindrome test function
 $('#button4').click(function(){
 
 //Take input from the HTML form
 var palInput = $("input[name=palindromeInput]").val();
+
 //Remove spaces from the string
 palInput = palInput.replace(/\s+/g, '');
 
@@ -459,66 +517,96 @@ var j = palInput.length - 1;
 //Compare the first and last characters, then second and second to last, and so forth.
 //Any test resulting in false will change isPalindrome to false
 for ( var i = 0; i  < j/2 ; i++ ) {
-if ( palInput[i] != palInput[j-i] ) {
-isPalindrome = false;
-}
+    if ( palInput[i] != palInput[j-i] ) {
+    isPalindrome = false;
+    }
 }
 
 
-//Print whether or not the string is a palindrome
+//Print whether the string is a palindrome
 if ( isPalindrome ) {
-document.getElementById("palindromeDiv").innerHTML = "The string is a palindrome.";
+    document.getElementById("palindromeDiv").innerHTML = "The string is a palindrome.";
 } else {
-document.getElementById("palindromeDiv").innerHTML = "The string is not a palindrome.";
+    document.getElementById("palindromeDiv").innerHTML = "The string is not a palindrome.";
 }
 });
-</pre>
-                       </div>
-                       <div class="modal-footer no-margin">
+    
+                            </pre>
+                                   </section>
+
+                               </div>
+                           </div>
                        </div>
                    </div>
                </div>
-           </div><!-- end Palindrome test code modal -->
+           </div>
+
+<!-- end Palindrome test modal -->
+
+ 
 
            <br />
            <br />
            <br />
 
            <div class="container">
-
-
-               <div class="clearfix"></div>
-
-
-
-               <div class="resume-desc">
-                   <h2>Javascript Exercises</h2>
-                   <br />
-
-                   <div>
-                       <a href="" data-toggle="modal" data-target="#numberComparison"><h4>Number comparison</a> <a href="" data-toggle="modal" data-target="#numberComparisonCode">[see code]</h4></a>
+               <div class="row">
+                   <div class="col-md-12 text-center wow fadeInUp">
+                       <div class="section-heading">
+                           <h2 class="heading-title" style="color: #252e30;">Javascript Exercises</h2>
+                           
+                       </div>
                    </div>
+               </div>
 
-                   <div>
-                       <a href="" data-toggle="modal" data-target="#factorial"><h4>Factorial finder</a> <a href="" data-toggle="modal" data-target="#factorialCode">[see code]</h4></a>
-                   </div>
-
-                   <div>
-                       <a href="" data-toggle="modal" data-target="#FizzBuzz"><h4>FizzBuzz</a> <a href="" data-toggle="modal" data-target="#FizzBuzzCode">[see code]</h4></a>
-                   </div>
-
-                   <div>
-                       <a href="" data-toggle="modal" data-target="#palindromeTest"><h4>Palindrome test</a> <a href="" data-toggle="modal" data-target="#palindromeTestCode">[see code]</h4></a>
-                   </div>
-
-
-
-
+               <div class="row">
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           
+                           <img src="images/portfolio/port4.jpg" alt="" class="img-responsive">
+                           
+                           <div class="image-overlay text-center">
+                               <a href="" data-toggle="modal" data-target="#numberComparison"><i class="fa fa-search"></i></a>
+                               <br />
+                           </div>
+                           Number Comparison
+                       </div>
+                   </div> <!-- col-md-4 end -->
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           <img src="images/portfolio/port2.jpg" alt="" class="img-responsive">
+                           <div class="image-overlay text-center">
+                               <a href="" data-toggle="modal" data-target="#factorial"><i class="fa fa-search"></i></a>
+                               <br />
+                           </div>
+                        Factorial
+                       </div>
+                   </div> <!-- col-md-4 end -->
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           <img src="images/portfolio/port3.jpg" alt="" class="img-responsive">
+                           <div class="image-overlay text-center">
+                               <a href="" data-toggle="modal" data-target="#FizzBuzz"><i class="fa fa-search"></i></a>
+                               <br />
+                           </div>
+                           FizzBuzz
+                       </div>
+                   </div> <!-- col-md-4 end 3step-->
+                   <div class="clearfix"></div>
+                   <div class="col-md-4 col-sm-4">
+                       <div class="portfolio-box">
+                           <img src="images/portfolio/port1.jpg" alt="" class="img-responsive">
+                           <div class="image-overlay text-center">
+                               <a href="" data-toggle="modal" data-target="#palindromeTest"><i class="fa fa-search"></i></a>
+                               <br />
+                           </div>
+                           Palindrome Test
+                       </div>
 
 
                </div>
-
-           </div><!-- row end -->
+           </div>
+          </div><!-- row end -->
        </section>
 
        
@@ -554,7 +642,7 @@ document.getElementById("palindromeDiv").innerHTML = "The string is not a palind
                            <div class="row">
                                <div class="col-lg-11">
                                    <h4>Web and Software Development, Coder Foundry, Spring 2016</h4>
-                                   <p>Used HTML, CSS, C#, Javascript, jQuery, and SQL to build various projects.</p>
+                                   <p>Used HTML, CSS, C#, Javascript, jQuery, and SQL to build projects.</p>
                                </div>
                            </div>
 
