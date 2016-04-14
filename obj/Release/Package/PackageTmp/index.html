@@ -231,11 +231,12 @@ var x = toAdd.split(" ");
 var y = [];
 
 //Convert each element of array x to integer using parseInt()
+//and push it to array y
 for (var i = 0; i < x.length; i++) {
     y.push(parseInt(x[i]));
     };
 
-//Print lowest number number
+//Print lowest number
 document.getElementById("leastNum").innerHTML = Math.min.apply(null, y);
     
 //Print greatest number
@@ -373,7 +374,7 @@ document.getElementById("factorialDiv").innerHTML = fact;
                                        This script takes two numbers between 1 and 100 and compares them to each number between 1 and 100.  For each number between 1 and 100 that is a multiple
                                        of the first number, the script prints "Fizz."  For each that is a multiple of the second number, it prints "Buzz."  If it is a multiple of both numbers,
                                        it prints "FizzBuzz."  Else, the number itself is printed.
-                                       <br /><br />Please enter two integers between 1 and 100 and click ENTER: <input type="text" name="fizzBuzzField" value="11 22">
+                                       <br /><br />Please enter two integers between 1 and 100 and click ENTER: <input type="text" name="fizzBuzzField" value="6 11">
                                    </form>
                                    <input type="button" onclick="fizzBuzz()" value="ENTER" id="button3" /> <br />
                                    <div id="fizzBuzzDiv"></div>
@@ -407,7 +408,7 @@ var outputString = "";
 
 //Convert each element of fbStringArray to integers and push them to fbIntegerArray
 for (var i = 0; i < fbStringArray.length; i++) {
-fbIntegerArray.push( parseInt( fbStringArray[i] ) );
+    fbIntegerArray.push( parseInt( fbStringArray[i] ) );
 };
 
 //Run FizzBuzz from 1 to 100
@@ -420,15 +421,18 @@ for ( var i = 1; i <= 100; i++ ) {
 //First test for being a multiple of both numbers and set outputString to FizzBuzz if it passes
 if( ( i / fbIntegerArray[0] == Math.floor(i / fbIntegerArray[0]) ) && ( i / fbIntegerArray[1] == Math.floor( i / fbIntegerArray[1]) ) ) {
 outputString += "FizzBuzz";
+
 //If that test fails, test for being a multiple of only the first number and append Fizz to outputString if it passes
 } else if( i / fbIntegerArray[0] == Math.floor(i / fbIntegerArray[0]) ) {
 outputString += "Fizz";
+
 //Then test for being a multiple of only the second number and append Buzz to outputString if it passes
 } else if( i / fbIntegerArray[1] == Math.floor(i / fbIntegerArray[1]) ) {
 outputString += "Buzz";
+
 //If those three tests fail, append the number being tested to outputString
 } else {
-outputString += i.toString();
+    outputString += i.toString();
 }
 
 //Add a space to the end of outputString to separate each entry by a space
@@ -499,6 +503,7 @@ $('#button4').click(function(){
 
 //Take input from the HTML form
 var palInput = $("input[name=palindromeInput]").val();
+
 //Remove spaces from the string
 palInput = palInput.replace(/\s+/g, '');
 
@@ -512,17 +517,17 @@ var j = palInput.length - 1;
 //Compare the first and last characters, then second and second to last, and so forth.
 //Any test resulting in false will change isPalindrome to false
 for ( var i = 0; i  < j/2 ; i++ ) {
-if ( palInput[i] != palInput[j-i] ) {
-isPalindrome = false;
-}
+    if ( palInput[i] != palInput[j-i] ) {
+    isPalindrome = false;
+    }
 }
 
 
 //Print whether the string is a palindrome
 if ( isPalindrome ) {
-document.getElementById("palindromeDiv").innerHTML = "The string is a palindrome.";
+    document.getElementById("palindromeDiv").innerHTML = "The string is a palindrome.";
 } else {
-document.getElementById("palindromeDiv").innerHTML = "The string is not a palindrome.";
+    document.getElementById("palindromeDiv").innerHTML = "The string is not a palindrome.";
 }
 });
     
